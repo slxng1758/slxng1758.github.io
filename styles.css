@@ -293,13 +293,72 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 .hero-sub {
   font-size: 1.125rem;
   color: #D3D2EC;
-  max-width: 52ch;
   margin-bottom: var(--space-4);
+}
+
+.hero-bio {
+  font-size: 1rem;
+  color: var(--color-muted-foreground);
+  margin-bottom: var(--space-4);
+}
+
+.hero-interests {
+  margin-bottom: var(--space-4);
+}
+
+.interest-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-border);
+}
+
+.interest-item {
+  display: block;
+  padding-block: 0.7rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.interest-text {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-foreground);
+}
+
+.hero-tools {
+  margin-bottom: var(--space-4);
+}
+
+.hero-tools-label {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-text);
+  margin: 0 0 var(--space-2);
+}
+
+.tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tool-list li {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+  background: var(--color-muted);
+  border: 1px solid var(--color-border);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-2);
 }
 
@@ -350,6 +409,7 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 
 .project-grid {
   display: grid;
+  align-items: start;
   gap: var(--space-3);
   grid-template-columns: 1fr;
 }
@@ -377,6 +437,8 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 26px rgba(123, 46, 255, 0.35);
 }
 .project-card:hover .project-link span { transform: translateX(4px); }
+
+.project-card-static { cursor: default; }
 
 .project-photo {
   position: relative;
@@ -408,6 +470,28 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 .project-photo-6 { background: #0d1117 url("assets/headroom-banner.jpg") center / cover no-repeat; }
 .project-photo-7 { background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-orange) 55%, var(--cosmic-magenta)); }
 .project-photo-8 { background: linear-gradient(135deg, var(--cosmic-orange), var(--cosmic-blue) 55%, var(--cosmic-purple)); }
+.project-photo-10 { background: linear-gradient(135deg, var(--cosmic-magenta), var(--cosmic-cyan) 55%, var(--cosmic-blue)); }
+.project-photo-11 { background: linear-gradient(135deg, var(--cosmic-blue), var(--cosmic-purple) 55%, var(--cosmic-cyan)); }
+.project-photo-12 { background: linear-gradient(135deg, var(--cosmic-purple), var(--cosmic-orange) 55%, var(--cosmic-magenta)); }
+.project-photo-shot {
+  height: 340px;
+  background: #17151f;
+}
+.project-photo-shot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project-photo-shot .project-photo-title {
+  padding: var(--space-1) var(--space-2);
+  font-size: 0.8125rem;
+}
+
+.project-card-body-compact {
+  padding: var(--space-2) var(--space-3);
+}
 
 .project-card-body {
   display: block;
