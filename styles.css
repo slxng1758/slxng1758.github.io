@@ -269,6 +269,7 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
   display: flex;
   align-items: center;
   padding-top: 76px;
+  padding-bottom: var(--space-5);
 }
 
 .hero-scrim {
@@ -406,10 +407,11 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 
 /* ---------- Work / Projects ---------- */
 .work { position: relative; z-index: 1; padding-block: var(--space-7); }
+#work { padding-top: var(--space-4); }
 
 .project-grid {
   display: grid;
-  align-items: start;
+  align-items: stretch;
   gap: var(--space-3);
   grid-template-columns: 1fr;
 }
@@ -421,7 +423,8 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 }
 
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: var(--color-card-foreground);
   border: 2px solid transparent;
   border-radius: var(--radius-lg);
@@ -444,7 +447,11 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
   position: relative;
   display: flex;
   align-items: flex-end;
+  flex-shrink: 0;
   height: 84px;
+}
+#achievements .project-photo {
+  height: 170px;
 }
 .project-photo::after {
   content: "";
@@ -464,15 +471,15 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 
 .project-photo-1 { background: linear-gradient(135deg, var(--cosmic-magenta), var(--cosmic-purple) 55%, var(--cosmic-blue)); }
 .project-photo-2 { background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-blue) 55%, var(--cosmic-purple)); }
-.project-photo-3 { background: linear-gradient(135deg, var(--cosmic-orange), var(--cosmic-magenta) 55%, var(--cosmic-purple)); }
-.project-photo-4 { background: linear-gradient(135deg, var(--cosmic-blue), var(--cosmic-cyan) 55%, var(--cosmic-orange)); }
+.project-photo-3 { background: #100c1e url("assets/yrhacks-banner.png") right 16px top 14px / auto 40% no-repeat; }
+.project-photo-4 { background: #0d1117 url("assets/jhu-logo.png") right 18px center / auto 34% no-repeat; }
 .project-photo-5 { background: #0a0e1c url("assets/litellm-banner.jpg") center 38% / cover no-repeat; }
 .project-photo-6 { background: #0d1117 url("assets/headroom-banner.jpg") center / cover no-repeat; }
-.project-photo-7 { background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-orange) 55%, var(--cosmic-magenta)); }
-.project-photo-8 { background: linear-gradient(135deg, var(--cosmic-orange), var(--cosmic-blue) 55%, var(--cosmic-purple)); }
+.project-photo-7 { background: #0d1220 url("assets/shn-logo.svg") right 18px center / auto 46% no-repeat; }
+.project-photo-8 { background: #100d1a url("assets/datadog-logo.svg") right 18px center / auto 44% no-repeat; }
 .project-photo-10 { background: #0b1424 url("assets/yprize-icon.png") right 14px center / auto 62% no-repeat; }
-.project-photo-11 { background: linear-gradient(135deg, var(--cosmic-blue), var(--cosmic-purple) 55%, var(--cosmic-cyan)); }
-.project-photo-12 { background: linear-gradient(135deg, var(--cosmic-purple), var(--cosmic-orange) 55%, var(--cosmic-magenta)); }
+.project-photo-11 { background: #0a0e1c url("assets/wqc-stack.jpg") center 18% / cover no-repeat; }
+.project-photo-12 { background: #0a0e1c url("assets/datadog.jpg") center 30% / cover no-repeat; }
 .project-photo-shot {
   background: #17151f;
 }
@@ -490,7 +497,10 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 }
 
 .project-card-body {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
   padding: var(--space-3);
 }
 
@@ -519,6 +529,7 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
   gap: 0.4rem;
   font-weight: 600;
   color: var(--color-accent-text);
+  margin-top: auto;
 }
 .project-link span { display: inline-block; transition: transform var(--dur-fast) var(--ease-out); }
 
