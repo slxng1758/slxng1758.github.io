@@ -471,30 +471,16 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 
 .project-photo-1 { background: linear-gradient(135deg, var(--cosmic-magenta), var(--cosmic-purple) 55%, var(--cosmic-blue)); }
 .project-photo-2 { background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-blue) 55%, var(--cosmic-purple)); }
-.project-photo-3 { background: #100c1e url("assets/yrhacks-banner.png") right 16px top 14px / auto 40% no-repeat; }
+.project-photo-3 { background: #100c1e url("assets/yrhacks-cube.png") right 16px center / auto 68% no-repeat; }
 .project-photo-4 { background: #0d1117 url("assets/jhu-logo.png") right 18px center / auto 34% no-repeat; }
 .project-photo-5 { background: #0a0e1c url("assets/litellm-banner.jpg") center 38% / cover no-repeat; }
 .project-photo-6 { background: #0d1117 url("assets/headroom-banner.jpg") center / cover no-repeat; }
 .project-photo-7 { background: #0d1220 url("assets/shn-logo.svg") right 18px center / auto 46% no-repeat; }
 .project-photo-8 { background: #100d1a url("assets/datadog-logo.svg") right 18px center / auto 44% no-repeat; }
+.project-photo-9 { background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-purple) 55%, var(--cosmic-magenta)); }
 .project-photo-10 { background: #0b1424 url("assets/yprize-icon.png") right 14px center / auto 62% no-repeat; }
 .project-photo-11 { background: #0a0e1c url("assets/wqc-stack.jpg") center 18% / cover no-repeat; }
 .project-photo-12 { background: #0a0e1c url("assets/datadog.jpg") center 30% / cover no-repeat; }
-.project-photo-shot {
-  background: #17151f;
-}
-.project-photo-shot img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-}
-
-.project-card-body-compact {
-  padding: var(--space-2) var(--space-3);
-}
 
 .project-card-body {
   display: flex;
