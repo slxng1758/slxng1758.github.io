@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120">
+  <!-- handoff arcs between agents -->
+  <g fill="none" stroke="#e6e9f5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 40 Q67 18 88 38"/>
+    <path d="M78 37 L88 38 L88 28"/>
+    <path d="M108 80 Q133 102 154 82"/>
+    <path d="M144 81 L154 82 L154 72"/>
+  </g>
+  <!-- agents -->
+  <circle cx="34" cy="60" r="14" fill="none" stroke="#e6e9f5" stroke-width="5"/>
+  <circle cx="100" cy="60" r="14" fill="#5ad1e6"/>
+  <circle cx="166" cy="60" r="14" fill="none" stroke="#e6e9f5" stroke-width="5"/>
+</svg>

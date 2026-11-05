@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120">
+  <!-- posts -->
+  <rect x="14" y="30" width="10" height="70" rx="3" fill="#e6e9f5"/>
+  <rect x="176" y="30" width="10" height="70" rx="3" fill="#e6e9f5"/>
+  <!-- wire, snapped in the middle -->
+  <path d="M24 52 H84 L90 60" fill="none" stroke="#e6e9f5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M176 52 H116 L110 44" fill="none" stroke="#e6e9f5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- spark at the break -->
+  <g stroke="#ff5a6e" stroke-width="4" stroke-linecap="round">
+    <line x1="100" y1="34" x2="100" y2="24"/>
+    <line x1="100" y1="70" x2="100" y2="80"/>
+    <line x1="88" y1="38" x2="82" y2="30"/>
+    <line x1="112" y1="66" x2="118" y2="74"/>
+    <line x1="112" y1="38" x2="118" y2="30"/>
+    <line x1="88" y1="66" x2="82" y2="74"/>
+  </g>
+  <circle cx="100" cy="52" r="7" fill="#ff5a6e"/>
+</svg>

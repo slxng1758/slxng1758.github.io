@@ -192,7 +192,27 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.05rem;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   margin-right: auto;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+}
+.nav-sep { opacity: 0.5; }
+.nav-resume {
+  font-weight: 500;
+  opacity: 0.85;
+  transition: opacity var(--dur-base) var(--ease-out);
+}
+.nav-resume:hover,
+.nav-resume:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* ---------- Full-page swirl background (fixed) ---------- */
@@ -470,7 +490,7 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 }
 
 .project-photo-1 { background: linear-gradient(135deg, var(--cosmic-magenta), var(--cosmic-purple) 55%, var(--cosmic-blue)); }
-.project-photo-2 { background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-blue) 55%, var(--cosmic-purple)); }
+.project-photo-2 { background: #0d1626 url("assets/relay-mark.svg") right 18px center / auto 70% no-repeat; }
 .project-photo-3 { background: #100c1e url("assets/yrhacks-cube.png") right 16px center / auto 68% no-repeat; }
 .project-photo-4 { background: #0d1117 url("assets/jhu-logo.png") right 18px center / auto 34% no-repeat; }
 .project-photo-6 { background: #0d1117 url("assets/headroom-banner.jpg") center / cover no-repeat; }
@@ -480,8 +500,8 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 .project-photo-10 { background: #0b1424 url("assets/yprize-icon.png") right 14px center / auto 62% no-repeat; }
 .project-photo-11 { background: #0a0e1c url("assets/wqc-stack.jpg") center 18% / cover no-repeat; }
 .project-photo-12 { background: #0a0e1c url("assets/datadog.jpg") center 30% / cover no-repeat; }
-.project-photo-13 { background: linear-gradient(135deg, var(--cosmic-blue), var(--cosmic-purple) 55%, var(--cosmic-magenta)); }
-.project-photo-14 { background: linear-gradient(135deg, var(--cosmic-purple), var(--cosmic-blue) 55%, var(--cosmic-cyan)); }
+.project-photo-13 { background: #0a0e1c url("assets/hackharvard.jpg") center 40% / cover no-repeat; }
+.project-photo-14 { background: #141026 url("assets/tripwire-mark.svg") right 18px center / auto 70% no-repeat; }
 .project-photo-15 { background: #1f2a44 url("assets/rezy-mark.svg") right 18px center / auto 62% no-repeat; }
 
 .project-card-body {
