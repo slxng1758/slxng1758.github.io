@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- filing page with a folded corner -->
+  <path d="M24 8 H76 L98 30 V112 H24 Z" fill="none" stroke="#e6e9f5" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M76 8 V30 H98" fill="none" stroke="#e6e9f5" stroke-width="5" stroke-linejoin="round"/>
+  <!-- unchanged lines -->
+  <g fill="#e6e9f5" opacity="0.55">
+    <rect x="36" y="38" width="38" height="6" rx="3"/>
+    <rect x="36" y="88" width="48" height="6" rx="3"/>
+  </g>
+  <!-- added line -->
+  <rect x="32" y="52" width="58" height="12" rx="3" fill="#3fd68c" opacity="0.22"/>
+  <rect x="48" y="55" width="36" height="6" rx="3" fill="#3fd68c"/>
+  <path d="M36 58 H44 M40 54 V62" stroke="#3fd68c" stroke-width="3" stroke-linecap="round"/>
+  <!-- removed line -->
+  <rect x="32" y="70" width="58" height="12" rx="3" fill="#ff5a6e" opacity="0.22"/>
+  <rect x="48" y="73" width="30" height="6" rx="3" fill="#ff5a6e"/>
+  <path d="M36 76 H44" stroke="#ff5a6e" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- three shards; the middle one is the current leader -->
+  <g fill="none" stroke="#e6e9f5" stroke-width="5">
+    <rect x="14" y="12" width="92" height="26" rx="6"/>
+    <rect x="14" y="82" width="92" height="26" rx="6"/>
+  </g>
+  <rect x="14" y="47" width="92" height="26" rx="6" fill="none" stroke="#ffb454" stroke-width="5"/>
+  <!-- key:value slots -->
+  <g fill="#e6e9f5">
+    <rect x="26" y="22" width="22" height="6" rx="3"/>
+    <rect x="26" y="92" width="22" height="6" rx="3"/>
+    <circle cx="92" cy="25" r="4.5"/>
+    <circle cx="92" cy="95" r="4.5"/>
+  </g>
+  <rect x="26" y="57" width="22" height="6" rx="3" fill="#ffb454"/>
+  <circle cx="92" cy="60" r="4.5" fill="#ffb454"/>
+  <!-- replication links -->
+  <g stroke="#e6e9f5" stroke-width="4" stroke-linecap="round" opacity="0.55">
+    <line x1="60" y1="38" x2="60" y2="47"/>
+    <line x1="60" y1="73" x2="60" y2="82"/>
+  </g>
+</svg>

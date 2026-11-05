@@ -79,6 +79,18 @@ a { color: inherit; text-decoration: none; }
 ul { margin: 0; padding: 0; list-style: none; }
 h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 :focus-visible {
   outline: 2px solid var(--color-ring);
   outline-offset: 3px;
@@ -489,15 +501,19 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
   padding: var(--space-2) var(--space-3);
 }
 
-.project-photo-1 { background: linear-gradient(135deg, var(--cosmic-magenta), var(--cosmic-purple) 55%, var(--cosmic-blue)); }
+.project-photo-1 { background: #0e1420 url("assets/disclosureflow-mark.svg") right 18px center / auto 70% no-repeat; }
 .project-photo-2 { background: #0d1626 url("assets/relay-mark.svg") right 18px center / auto 70% no-repeat; }
 .project-photo-3 { background: #100c1e url("assets/yrhacks-cube.png") right 16px center / auto 68% no-repeat; }
 .project-photo-4 { background: #0d1117 url("assets/jhu-logo.png") right 18px center / auto 34% no-repeat; }
 .project-photo-6 { background: #070A0F url("assets/headroom-mark.svg") right 18px center / auto 62% no-repeat; }
 .project-photo-7 { background: #0d1220 url("assets/shn-logo.svg") right 18px center / auto 46% no-repeat; }
 .project-photo-8 { background: #100d1a url("assets/datadog-logo.svg") right 18px center / auto 44% no-repeat; }
-.project-photo-9 { background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-purple) 55%, var(--cosmic-magenta)); }
-.project-photo-10 { background: #0b1424 url("assets/yprize-icon.png") right 14px center / auto 62% no-repeat; }
+.project-photo-9 { background: #0f1222 url("assets/kvstore-mark.svg") right 18px center / auto 70% no-repeat; }
+.project-photo-10 {
+  background:
+    url("assets/yprize-icon.png") left 19% top 70px / auto 58px no-repeat,
+    #0b1424 url("assets/yprize-team.jpg") center 40% / cover no-repeat;
+}
 .project-photo-11 { background: #0a0e1c url("assets/wqc-stack.jpg") center 18% / cover no-repeat; }
 .project-photo-12 { background: #0a0e1c url("assets/datadog.jpg") center 30% / cover no-repeat; }
 .project-photo-13 { background: #0a0e1c url("assets/hackharvard.jpg") center 40% / cover no-repeat; }
