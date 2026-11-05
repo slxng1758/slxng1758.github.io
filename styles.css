@@ -493,7 +493,7 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 .project-photo-2 { background: #0d1626 url("assets/relay-mark.svg") right 18px center / auto 70% no-repeat; }
 .project-photo-3 { background: #100c1e url("assets/yrhacks-cube.png") right 16px center / auto 68% no-repeat; }
 .project-photo-4 { background: #0d1117 url("assets/jhu-logo.png") right 18px center / auto 34% no-repeat; }
-.project-photo-6 { background: #0d1117 url("assets/headroom-banner.jpg") center / cover no-repeat; }
+.project-photo-6 { background: #070A0F url("assets/headroom-mark.svg") right 18px center / auto 62% no-repeat; }
 .project-photo-7 { background: #0d1220 url("assets/shn-logo.svg") right 18px center / auto 46% no-repeat; }
 .project-photo-8 { background: #100d1a url("assets/datadog-logo.svg") right 18px center / auto 44% no-repeat; }
 .project-photo-9 { background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-purple) 55%, var(--cosmic-magenta)); }
