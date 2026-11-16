@@ -511,6 +511,7 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0; }
 .project-photo-13 { background: #0a0e1c url("assets/hackharvard.jpg") center 40% / cover no-repeat; }
 .project-photo-14 { background: #141026 url("assets/tripwire-mark.svg") right 18px center / auto 70% no-repeat; }
 .project-photo-15 { background: #1f2a44 url("assets/rezy-mark.svg") right 18px center / auto 62% no-repeat; }
+.project-photo-16 { background: #0e1222 url("assets/willagentsbuy-icon.png") right 18px center / auto 70% no-repeat; }
 
 .project-card-body {
   display: flex;
